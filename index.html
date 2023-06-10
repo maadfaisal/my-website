@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALIG Styling</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Inline styles for demonstration purposes */
+    #contact-details {
+      margin-top: 20px;
+    }
+    
+    body {
+      background-image: url('download.jfif');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+  </style>
+   
+  <script>
+    // JavaScript code for your e-commerce website
+
+    // Function to display contact details
+    function displayContactDetails() {
+      // Replace the placeholders with your actual contact details
+      const contactDetails = `
+        <h2>Contact Details</h2>
+        <p>Email: maadfaisal04@gmail.com</p>
+        <p>Phone: 6299572199</p>
+        <p>Address: aligarh muslim university,sir shah sulemaan hall</p>
+      `;
+
+      // Select the element where the contact details will be displayed
+      const contactContainer = document.getElementById('contact-details');
+
+      // Set the HTML content of the element to the contact details
+      contactContainer.innerHTML = contactDetails;
+    }
+
+    // Function to display about details
+    function displayAboutDetails() {
+      // Replace the placeholder with your own about details
+      const aboutDetails = `
+        <h2>About Us</h2>
+        <p>Welcome to our clothing store! We are dedicated to providing high-quality and stylish clothing for all fashion enthusiasts.</p>
+        <p>Feel free to explore our collection and find the perfect outfits for any occasion.</p>
+      `;
+
+      // Select the element where the about details will be displayed
+      const aboutContainer = document.getElementById('about-details');
+
+      // Set the HTML content of the element to the about details
+      aboutContainer.innerHTML = aboutDetails;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1>Your Clothing Store</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><button id="about-button" onclick="displayAboutDetails()">About</button></li>
+          <li><button id="contact-button" onclick="displayContactDetails()">Contact</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Welcome to Your Clothing Store</h2>
+      <p>Discover the latest fashion trends and shop with style.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="featured-products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product">
+        <img src="image.jpg.jpg" alt="Product Image">
+        <h3>Boys T- shirt</h3>
+        <p class="price">$6.06</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+      <!-- Add more product items here -->
+    </div>
+  </section>
+
+  <div id="about-details"></div>
+  <div id="contact-details"></div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Your Clothing Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
